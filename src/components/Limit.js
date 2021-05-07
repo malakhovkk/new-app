@@ -7,7 +7,7 @@ function Limit({ clicked_ }) {
 		return res;
 	}
 	return (
-		<Form.Control as="select" onChange={(e) => clicked_(e)}>
+		<Form.Control as="select" value={10} onChange={(e) => clicked_(e)}>
 			{getNumbers().map((el) => <option>{el}</option>)}
 		</Form.Control>
 	);

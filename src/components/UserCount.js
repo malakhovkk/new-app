@@ -7,7 +7,7 @@ function UserCount({ clicked_ }) {
 		return res;
 	}
 	return (
-		<Form.Control as="select" onChange={(e) => clicked_(e)}>
+		<Form.Control as="select" value={100} onChange={(e) => clicked_(e)}>
 			{getNumbers().map((el) => <option>{el}</option>)}
 		</Form.Control>
 	);
